@@ -1,7 +1,9 @@
 <script></script>
 
 <template>
-  <router-view></router-view>
+  <div class="font-lato">
+    <router-view></router-view>
+  </div>
 </template>
 
 <style></style>

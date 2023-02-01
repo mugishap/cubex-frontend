@@ -12,7 +12,7 @@ const routes = [
         component: Login
     },
     {
-        path: "/auth/signup",
+        path: "/auth/register",
         name: "Signup",
         component: Signup
     },
@@ -38,4 +38,4 @@ const router = createRouter({
     routes
 })
 
-export default { router }
+export default  router 
