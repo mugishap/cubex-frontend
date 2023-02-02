@@ -73,12 +73,16 @@ export default {
       password: "",
     });
     const handleSubmit = async () => {
-      console.log(formData);
-      const res = await api({ requiresAuth: false }).post("/users/create", {
-        ...formData,
-      });
-      const data = res.data;
-      console.log(data);
+      try {
+        console.log(formData);
+        const res = await api({ requiresAuth: false }).post("/users/create", {
+          ...formData,
+        });
+        const data = res.data;
+        console.log(data);
+      } catch (error) {
+        console.log(error);
+      }
     };
     return {
       loading,
