@@ -61,6 +61,7 @@
 <script>
 import { ref, reactive } from "vue";
 import api from "../../api";
+
 export default {
   name: "Signup",
   setup() {
@@ -72,11 +73,6 @@ export default {
     });
     const handleSubmit = async () => {
       try {
-        this.$notify({
-          group:'foo',
-          title:"Logging in",
-          text:'Hello user! '
-        })
         console.log(formData);
         const res = await api({ requiresAuth: false }).post("/users/login", {
           ...formData,

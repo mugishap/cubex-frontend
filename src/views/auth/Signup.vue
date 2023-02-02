@@ -75,7 +75,7 @@ export default {
     const handleSubmit = async () => {
       try {
         console.log(formData);
-        const res = await api({ requiresAuth: false }).post("/users/create", {
+        const res = await api({ requiresAuth: false }).post("/user/create", {
           ...formData,
         });
         const data = res.data;
