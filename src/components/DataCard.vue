@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full h-44 rounded border-2 border-[#DDDDDD] flex items-center justify-center flex-col"
+    class="w-full h-44 rounded border border-[#DDDDDD] flex items-center justify-center flex-col"
   >
     <span class="text-xl font-bold mb-6 text-slate-600">{{ data.text }}</span>
     <span
