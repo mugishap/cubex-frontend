@@ -70,7 +70,6 @@ export default {
     ];
     
     return {
-      
       surveyData,
     };
   },

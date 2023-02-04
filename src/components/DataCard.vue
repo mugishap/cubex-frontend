@@ -4,7 +4,8 @@
   >
     <span class="text-xl font-bold mb-6 text-slate-600">{{ data.text }}</span>
     <span
-      class="text-3xl font-bold b-4"
+      class="text-4xl font-bold b-4"
+      :style="`color: ${data.color} ;`"
       >{{ data.value }}</span
     >
   </div>
